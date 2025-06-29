@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resume Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1>AI Resume Generator</h1>
+    <form id="resume-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+
+      <h3>Education</h3>
+      <input type="text" name="degree" placeholder="Degree" required>
+      <input type="text" name="institution" placeholder="Institution" required>
+      <input type="text" name="year" placeholder="Year" required>
+
+      <h3>Work Experience</h3>
+      <input type="text" name="title" placeholder="Job Title" required>
+      <input type="text" name="company" placeholder="Company" required>
+      <input type="text" name="duration" placeholder="Duration" required>
+      <textarea name="workDesc" placeholder="Job Description" required></textarea>
+
+      <h3>Skills</h3>
+      <input type="text" name="skills" placeholder="Skills (comma separated)" required>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+    
+    <div id="result"></div>
+    <button id="download-pdf" style="display:none; margin-top: 10px;">Download as PDF</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
